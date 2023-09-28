@@ -6,33 +6,47 @@
 	<meta name="keywords" content="html,course,css,tags">
 	<meta name="description" content="Это сайт- резюме Прасолова Кирилла">
 	<title>Prasolov Resume</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<img src="https://sun6-22.userapi.com/s/v1/if1/qqErBQnzcB2ofgBvxfR4k2QL_gJ8NxG8SvFg3a-lDHwLUCVqxgRGwJJDPCc9DlGb3kmABXzf.jpg?size=1073x1075&quality=96&crop=0,0,1073,1075&ava=1" width="200">
+	<div class="container">
+	<div class="info">
+	<img src="https://sun6-22.userapi.com/s/v1/if1/qqErBQnzcB2ofgBvxfR4k2QL_gJ8NxG8SvFg3a-lDHwLUCVqxgRGwJJDPCc9DlGb3kmABXzf.jpg?size=1073x1075&quality=96&crop=0,0,1073,1075&ava=1" class="avatar">
+	</div>
+	<div class="info_text">
 	<h1>Прасолов Кирилл</h1>
-
 	<p><em>Я ученик 9класса ЗСШ</em>, <strong>в 2023 году начинаю изучать программирование сайтов....</strong></p>
 	<p>Я занимаюсь спортом с раннего возраста. <strong> <em>Любимый вид спорта-хоккей.</em></strong></p>
+	<div class="bar">
+	<h3>Список социальных сетей:</h3>
+	<a href="https://instagram.com/ths_kira_2?igshid=OGQ5ZDc2ODk2ZA==" target="blank" > Мой Instagram</a>
+	|
+	<a href="https://instagram.com/07_vasilevich_13?igshid=OGQ5ZDc2ODk2ZA==" target="blank" >Instagram Вова Лысый</a>
+	|
+	<a href="https://instagram.com/arteem.kaq?igshid=OGQ5ZDc2ODk2ZA==" target="blank" >Instagram Артем Бобр</a>
+    </div>
+	</div>
 	<br>
-
-	<h1>Мои хобби</h1>
-	<ol>
+	<div class="hobbi">
+	<h2>Мои хобби</h2>
+	<ol class="top">
 		<li>Хоккей</li>
 		<li>Мото</li>
 		<li>IT</li>
 		<li>Футбол</li>
 	</ol>
-
-	<hr>
-	<h2>Время увлечения </h2>
-	<table>
-		<thead>
+	</div>
+	
+	<div class="time">
+	<h3>Время увлечения </h3>
+	<table class="table">
+		<!-- <thead>
 		<tr>
 			<th>Название</th>
 			<th>Опыт</th>
 			<th>Год</th>
 		</tr>
-		</thead>
+		</thead> -->
 
 			<tbody>
 	    <tr>
@@ -60,35 +74,32 @@
 	    </tr>
 			</tbody>
 	</table>
+	</div>
 
-	<h3>Список социальных сетей:</h3>
-	<a href="https://instagram.com/ths_kira_2?igshid=OGQ5ZDc2ODk2ZA==" target="blank"> Мой Instagram</a>
-	|
-	<a href="https://instagram.com/07_vasilevich_13?igshid=OGQ5ZDc2ODk2ZA==" target="blank">Instagram Вова Лысый</a>
-	|
-	<a href="https://instagram.com/arteem.kaq?igshid=OGQ5ZDc2ODk2ZA==" target="blank">Instagram Артем Бобр</a>
+     
+      <form action="" class="form">
+      	 <h4>Связаться со мной</h4>
 
 
-	<hr>
-
-      <h1>Связаться со мной</h1>
-      <form action="">
-      <div>
+      	 <div class="form-row">
+      <div class="form-group">
             <label for="text">Ваше имя:</label>
 			<input type="text" id="text" placeholder="Введите имя">
         </div>
-         <div>
+         <div class="form-group">
             <label for="email">Ваш email:</label>
 			<input type="email" id="email" placeholder="Введите email">
         </div>
-         <div>
+        </div>
+
+         <div class="form-group">
             <label for="message">Ваше сообщение:</label>
-            <br>
             <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
         </div>
 
-         <input type="submit" value="Отправить!">
+         <input class="btn" type="submit" value="Отправить!">
       </form>
+      </div>
 
 </body>
 </html>
